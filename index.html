@@ -375,71 +375,73 @@ var CONFIG = {
 
   program: {
     1: {
-      mon: {label:"Lower + Pull", note:"You lift right before practice, so this session is built to leave you strong, not depleted. Leave 2-3 reps in reserve on every working set — that's not playing it safe, that's what keeps you sharp in the water afterward.", exercises:[
-        {type:"sets", name:"Leg Press", sets:["6-8","6-8","6-8"], rest:"2 min", cue:"Controlled reps — this is your leg-specific strength work."},
+      mon: {label:"Leg Day", note:"You lift right before practice, so this session is built to leave you strong, not depleted. Leave 2-3 reps in reserve on every working set. One thing worth watching now that legs get their own dedicated day: don't pile on extra sets just because it's the only leg work you'll do this week — the volume here is already sized right.", exercises:[
+        {type:"sets", name:"Leg Press", sets:["6-8","6-8","6-8"], rest:"2 min", cue:"Controlled reps — this is your main leg-strength builder."},
         {type:"sets", name:"Hip Thrust", sets:["8","8","8"], rest:"90 sec", cue:"No slack, controlled."},
-        {type:"sets", name:"Lat Pulldown", sets:["8","8","8"], rest:"90 sec", cue:"Full range, controlled tempo."},
-        {type:"sets", name:"Chest-Supported Row", sets:["8","8","8"], rest:"75 sec", cue:"Squeeze your shoulder blades together."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["8","8"], rest:"90 sec", cue:"Push your hips back, controlled down, strong up."},
         {type:"sets", name:"Hamstring Curl", sets:["8-10","8-10"], rest:"60 sec", cue:"Controlled, full range."},
+        {type:"sets", name:"Leg Extension", sets:["10","10"], rest:"60 sec", cue:"Controlled — quad-specific volume."},
         {type:"sets", name:"Calf Raises", sets:["10","10"], rest:"60 sec", cue:"Full range, controlled."}
       ]},
-      wed: {label:"Upper + Core", note:"Curl and tricep pushdown are paired as a superset to keep this session inside your time window without cutting anything you'd actually want to do.", exercises:[
+      wed: {label:"Upper Day", note:"All your pressing and pulling in one session now. Curl and tricep pushdown stay paired as a superset to keep this inside your time window.", exercises:[
         {type:"sets", name:"DB Bench Press", sets:["6-8","6-8","6-8"], rest:"90 sec", cue:"Control tempo, no bounce."},
+        {type:"sets", name:"DB Incline Press", sets:["8","8"], rest:"90 sec", cue:"Controlled, strong lockout."},
         {type:"pullup", name:"Pull-Ups / Assisted Pull-Ups", sets:3, rest:"90 sec", cue:"Use only as much assistance as you need. Target 5-8 reps."},
         {type:"sets", name:"Single-Arm Cable Row", sets:["8","8","8"], rest:"60 sec", cue:"Not heavy, but controlled — squeeze your upper back. No lifting with your lower back."},
         {type:"sets", name:"DB Shoulder Press", sets:["8","8"], rest:"45 sec", cue:"Slow and controlled — durability work."},
-        {type:"superset", name:"DB Curl + Rope Tricep Pushdown Superset", rounds:2, rest:"45 sec after each round", cue:"Controlled, full range — curl straight into pushdown, no rest between the two."},
-        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace your core, resist rotation."}
+        {type:"superset", name:"DB Hammer Curl + Rope Tricep Pushdown Superset", rounds:2, rest:"45 sec after each round", cue:"Controlled, full range — curl straight into pushdown, no rest between the two."}
       ]},
-      fri: {label:"Full Body + Arms", note:"Romanian deadlift here instead of a second quad-dominant squat pattern — Monday already covers that. This balances the week toward your posterior chain.", exercises:[
-        {type:"sets", name:"DB Romanian Deadlift", sets:["8","8"], rest:"90 sec", cue:"Push your hips back, controlled down, strong up."},
-        {type:"sets", name:"DB Incline Press", sets:["8","8"], rest:"90 sec", cue:"Controlled, strong lockout."},
-        {type:"sets", name:"Leg Extension", sets:["10","10"], rest:"60 sec", cue:"Controlled — this is more leg-specific volume."},
-        {type:"sets", name:"DB Hammer Curl", sets:["10","10"], rest:"45 sec", cue:"Controlled, no swinging — different grip than Wednesday's curl, real arm variety."}
+      fri: {label:"Core + Back Day", note:"Dedicated back and core work to close the week — this is what supports everything you're doing on the other two days, not filler.", exercises:[
+        {type:"sets", name:"Lat Pulldown", sets:["10","10","10"], rest:"75 sec", cue:"Full range, controlled tempo."},
+        {type:"sets", name:"Chest-Supported Row", sets:["10","10"], rest:"75-90 sec", cue:"Squeeze your shoulder blades together at the top."},
+        {type:"sets", name:"Back Extension", sets:["10","10"], rest:"60 sec", cue:"Controlled — focus on hip extension, not lower-back strain."},
+        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace your core, resist rotation."},
+        {type:"sets", name:"Hanging Knee Raise", sets:["10-12","10-12"], rest:"45 sec", cue:"Controlled — no swinging."}
       ]}
     },
     2: {
-      mon: {label:"Lower + Pull", note:"Reps come down, load goes up — real strength work that matches your experience. Still leaving 2-3 in reserve on every set, still fresh for practice right after.", exercises:[
+      mon: {label:"Leg Day", note:"Reps come down, load goes up — real strength work. Still leaving 2-3 in reserve on every set, still fresh for practice right after.", exercises:[
         {type:"sets", name:"Leg Press", sets:["5-6","5-6","5-6"], rest:"2 min", cue:"Heavier than Phase 1, controlled reps."},
         {type:"sets", name:"Hip Thrust", sets:["6","6","6"], rest:"90 sec", cue:"No slack, controlled — heavier."},
-        {type:"sets", name:"Lat Pulldown", sets:["6-8","6-8","6-8"], rest:"90 sec", cue:"Strong pull, controlled return."},
-        {type:"sets", name:"Chest-Supported Row", sets:["6-8","6-8","6-8"], rest:"90 sec", cue:"Heavier, controlled — strong upper-back squeeze."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["6","6"], rest:"90 sec", cue:"Heavier, controlled down, strong up."},
         {type:"sets", name:"Hamstring Curl", sets:["8","8"], rest:"60 sec", cue:"Controlled, full range."},
+        {type:"sets", name:"Leg Extension", sets:["8","8"], rest:"60 sec", cue:"Controlled, leg-specific volume."},
         {type:"sets", name:"Calf Raises", sets:["8-10","8-10"], rest:"60 sec", cue:"Full range, add weight gradually."}
       ]},
-      wed: {label:"Upper + Core", note:"Same principle as Phase 1 — heavier, still controlled, still respecting your time window.", exercises:[
+      wed: {label:"Upper Day", note:"Same principle as Phase 1 — heavier, still controlled, still respecting your time window.", exercises:[
         {type:"sets", name:"DB Bench Press", sets:["5-6","5-6","5-6"], rest:"90 sec", cue:"Heavier than Phase 1, control the tempo."},
+        {type:"sets", name:"DB Incline Press", sets:["6","6","6"], rest:"90 sec", cue:"Heavier, strong lockout."},
         {type:"pullup", name:"Pull-Ups / Assisted Pull-Ups", sets:3, rest:"90 sec", cue:"Use less assistance than Phase 1 where you can."},
         {type:"sets", name:"Single-Arm Cable Row", sets:["6-8","6-8","6-8"], rest:"60 sec", cue:"Heavier, controlled — squeeze your upper back."},
         {type:"sets", name:"DB Shoulder Press", sets:["6-8","6-8"], rest:"60 sec", cue:"Controlled, strong finish."},
-        {type:"superset", name:"DB Curl + Rope Tricep Pushdown Superset", rounds:2, rest:"60 sec after each round", cue:"Controlled, full range."},
-        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace hard, resist rotation."}
+        {type:"superset", name:"DB Hammer Curl + Rope Tricep Pushdown Superset", rounds:2, rest:"60 sec after each round", cue:"Controlled, full range."}
       ]},
-      fri: {label:"Full Body + Athletic", note:"One explosive movement enters here on purpose — medicine ball, not bodyweight jumping, matching what you actually want to do. This is where strength starts becoming athletic quality.", exercises:[
-        {type:"sets", name:"DB Romanian Deadlift", sets:["6","6","6"], rest:"90 sec", cue:"Heavier than Phase 1, controlled down, strong up."},
-        {type:"sets", name:"DB Incline Press", sets:["6","6","6"], rest:"90 sec", cue:"Heavier, strong lockout."},
-        {type:"sets", name:"Leg Extension", sets:["8","8"], rest:"60 sec", cue:"Controlled, leg-specific volume."},
-        {type:"sets", name:"DB Hammer Curl", sets:["8","8"], rest:"45 sec", cue:"Controlled, no swinging."},
+      fri: {label:"Core + Back Day", note:"One explosive movement enters here on purpose — medicine ball, not bodyweight jumping, matching what you actually want to do.", exercises:[
+        {type:"sets", name:"Lat Pulldown", sets:["8","8","8"], rest:"75 sec", cue:"Strong pull, controlled return."},
+        {type:"sets", name:"Chest-Supported Row", sets:["8","8"], rest:"90 sec", cue:"Heavier, controlled — strong upper-back squeeze."},
+        {type:"sets", name:"Back Extension", sets:["8","8"], rest:"60 sec", cue:"Controlled — hip extension focus."},
+        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace hard, resist rotation."},
+        {type:"sets", name:"Hanging Knee Raise", sets:["10","10"], rest:"45 sec", cue:"Controlled — no swinging."},
         {type:"sets", name:"Medicine Ball Slam", sets:["5","5","5"], rest:"60 sec", cue:"Explosive, controlled — this is your athletic/power work, not a bodyweight jump."}
       ]}
     },
     3: {
-      mon: {label:"Lower + Pull Power", note:"Less total work on purpose — championship season is close, and freshness matters more than volume now, especially with practice right after.", exercises:[
+      mon: {label:"Leg Day", note:"Less total work on purpose — championship season is close, and freshness matters more than volume now, especially with practice right after.", exercises:[
         {type:"sets", name:"Leg Press", sets:["5","5"], rest:"2 min", cue:"Heavier, don't grind."},
         {type:"sets", name:"Hip Thrust", sets:["5","5"], rest:"90 sec", cue:"Fast, powerful lockout — stop before reps slow down."},
-        {type:"sets", name:"Lat Pulldown", sets:["5","5"], rest:"90 sec", cue:"Powerful pull, controlled return."},
+        {type:"sets", name:"DB Romanian Deadlift", sets:["5","5"], rest:"90 sec", cue:"Controlled down, strong and fast up."},
         {type:"sets", name:"Hamstring Curl", sets:["6","6"], rest:"60 sec", cue:"Controlled, maintain strength without extra fatigue."}
       ]},
-      wed: {label:"Upper + Core", note:"Shorter session, same principle — quality over quantity, every rep.", exercises:[
+      wed: {label:"Upper Day", note:"Shorter session, same principle — quality over quantity, every rep.", exercises:[
         {type:"sets", name:"DB Bench Press", sets:["5","5"], rest:"90 sec", cue:"Strong, controlled press."},
-        {type:"pullup", name:"Pull-Ups / Assisted Pull-Ups", sets:2, rest:"90 sec", cue:"Least assistance that still gives you clean reps."},
-        {type:"sets", name:"DB Shoulder Press", sets:["5","5"], rest:"60 sec", cue:"Strong, controlled."},
-        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace hard, resist rotation."}
-      ]},
-      fri: {label:"Full Body + Race Power", note:"This is what the foundation was for — strength expressed quickly. Quality over quantity, and don't add extra sets just because you're feeling good.", exercises:[
-        {type:"contrast", name:"DB Romanian Deadlift &rarr; Medicine Ball Slam", rounds:3, liftReps:"5", jumpReps:"4", restBetween:"20-30 sec", restRounds:"90 sec", cue:"Controlled strength rep, then explosive extension. Full quality on both halves."},
         {type:"sets", name:"DB Incline Press", sets:["5","5"], rest:"90 sec", cue:"Strong, controlled press."},
-        {type:"sets", name:"Leg Extension", sets:["6","6"], rest:"60 sec", cue:"Light, controlled — maintain without adding fatigue."}
+        {type:"pullup", name:"Pull-Ups / Assisted Pull-Ups", sets:2, rest:"90 sec", cue:"Least assistance that still gives you clean reps."},
+        {type:"sets", name:"DB Shoulder Press", sets:["5","5"], rest:"60 sec", cue:"Strong, controlled."}
+      ]},
+      fri: {label:"Core + Back Day", note:"This is what the foundation was for — strength expressed quickly. Quality over quantity, and don't add extra sets just because you're feeling good.", exercises:[
+        {type:"contrast", name:"DB Romanian Deadlift &rarr; Medicine Ball Slam", rounds:3, liftReps:"5", jumpReps:"4", restBetween:"20-30 sec", restRounds:"90 sec", cue:"Controlled strength rep, then explosive extension. Full quality on both halves."},
+        {type:"sets", name:"Lat Pulldown", sets:["5","5"], rest:"75 sec", cue:"Powerful pull, controlled return."},
+        {type:"sets", name:"Pallof Press", sets:["8/side","8/side"], rest:"45 sec", cue:"Brace hard, resist rotation."}
       ]}
     }
   },
